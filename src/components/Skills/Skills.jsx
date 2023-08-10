@@ -55,12 +55,7 @@ const Skills = () => {
 
                 <p className="text-center fz-md">Express.js</p>
               </div>
-              <div className="image">
-
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt=""/>
-          
-                <p className="text-center fz-md">Python</p>
-              </div>
+              
               <div className="image">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt=""/>
 

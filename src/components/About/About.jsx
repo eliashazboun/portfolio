@@ -8,7 +8,7 @@ const About = () => {
   }
  
   return (
-    <div className="about ">
+    <div className="about">
       <div className="test-1">
         <Fade cascade triggerOnce>
         <h1 className="text-center fz-xxl pad-b4 pad-t5 m-t5">ABOUT</h1>

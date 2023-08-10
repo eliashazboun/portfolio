@@ -10,7 +10,7 @@ const Hero = () => {
   }
 
   return (
-    <div className="hero w-100">
+    <div className="hero">
       <div className="w-100">
         <div className="section bg-background h-90vh w-100">
           <div className="display-f flex-d-col justify-center align-center h-80vh">
@@ -19,10 +19,10 @@ const Hero = () => {
                 <div>
                   <Reveal cascade damping={1} triggerOnce>
                     <div>
-                      <h1 className="title fz-xxxl">
-                        Hi, I'm <span className="text-secondary">Elias.</span>
+                      <h1 className="title">
+                        Hi, I'm <span className="text-secondary ">Elias.</span>
                       </h1>
-                      <h1 className="fz-xxxl pad-b2 title">I'm a full stack developer.</h1>
+                      <h1 className=" pad-b2 title">I'm a full stack developer.</h1>
                       <div className="buttonrow"></div>
                     </div>
                     <ButtonRow scroll={true} items={["Skills", "Projects", "About", "Contact"]} />

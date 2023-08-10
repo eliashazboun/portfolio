@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="wrapper">
         <div className="left">
-        <Link  to='hero' spy={false} smooth={true} offset={0} >
+        <Link to='hero' spy={false} smooth={true} offset={0} >
 
           <div className="item">
             <img src={require("../../images/eliaspic-removebg-preview.png")} alt="" />
