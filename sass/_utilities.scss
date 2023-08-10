@@ -1,0 +1,324 @@
+@use "sass:math";
+
+$two-multiplier: 2;
+$three-multiplier: 4;
+$four-multiplier: 6;
+$five-multiplier: 8;
+
+$utilities: (
+  "padding": (
+    "prefix": "pad",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * $two-multiplier,
+      "3": $base-padding * $three-multiplier,
+      "4": $base-padding * $four-multiplier,
+      "5": $base-padding * $five-multiplier,
+    ),
+  ),
+  "padding-left": (
+    "prefix": "pad",
+    "values": (
+      "l0": 0,
+      "l1": $base-padding,
+      "l2": $base-padding * $two-multiplier,
+      "l3": $base-padding * $three-multiplier,
+      "l4": $base-padding * $four-multiplier,
+      "l5": $base-padding * $five-multiplier,
+    ),
+  ),
+  "padding-right": (
+    "prefix": "pad",
+    "values": (
+      "r0": 0,
+      "r1": $base-padding,
+      "r2": $base-padding * $two-multiplier,
+      "r3": $base-padding * $three-multiplier,
+      "r4": $base-padding * $four-multiplier,
+      "r5": $base-padding * $five-multiplier,
+    ),
+  ),
+  "padding-top": (
+    "prefix": "pad",
+    "values": (
+      "t0": 0,
+      "t1": $base-padding,
+      "t2": $base-padding * $two-multiplier,
+      "t3": $base-padding * $three-multiplier,
+      "t4": $base-padding * $four-multiplier,
+      "t5": $base-padding * $five-multiplier,
+    ),
+  ),
+  "padding-bottom": (
+    "prefix": "pad",
+    "values": (
+      "b0": 0,
+      "b1": $base-padding,
+      "b2": $base-padding * $two-multiplier,
+      "b3": $base-padding * $three-multiplier,
+      "b4": $base-padding * $four-multiplier,
+      "b5": $base-padding * $five-multiplier,
+    ),
+  ),
+  "margin": (
+    "prefix": "m",
+    "values": (
+      "0": 0 auto,
+      "1": $base-margin,
+      "2": $base-margin * $two-multiplier,
+      "3": $base-margin * $three-multiplier,
+      "4": $base-margin * $four-multiplier,
+      "5": $base-margin * $five-multiplier,
+    ),
+  ),
+  "margin-left": (
+    "prefix": "m",
+    "values": (
+      "l0": 0,
+      "l1": $base-margin,
+      "l2": $base-margin * $two-multiplier,
+      "l3": $base-margin * $three-multiplier,
+      "l4": $base-margin * $four-multiplier,
+      "l5": $base-margin * $five-multiplier,
+    ),
+  ),
+  "margin-right": (
+    "prefix": "m",
+    "values": (
+      "r0": 0,
+      "r1": $base-margin,
+      "r2": $base-margin * $two-multiplier,
+      "r3": $base-margin * $three-multiplier,
+      "r4": $base-margin * $four-multiplier,
+      "r5": $base-margin * $five-multiplier,
+    ),
+  ),
+  "margin-top": (
+    "prefix": "m",
+    "values": (
+      "t0": 0,
+      "t1": $base-margin,
+      "t2": $base-margin * $two-multiplier,
+      "t3": $base-margin * $three-multiplier,
+      "t4": $base-margin * $four-multiplier,
+      "t5": $base-margin * $five-multiplier,
+    ),
+  ),
+  "margin-bottom": (
+    "prefix": "m",
+    "values": (
+      "b0": 0,
+      "b1": $base-margin,
+      "b2": $base-margin * $two-multiplier,
+      "b3": $base-margin * $three-multiplier,
+      "b4": $base-margin * $four-multiplier,
+      "b5": $base-margin * $five-multiplier,
+    ),
+  ),
+
+  "opacity": (
+    "prefix": "o",
+    "values": (
+      "0": 0,
+      "10": 0.1,
+      "20": 0.2,
+      "30": 0.3,
+      "40": 0.4,
+      "50": 0.5,
+      "60": 0.6,
+      "70": 0.7,
+      "80": 0.8,
+      "90": 0.9,
+      "100": 1,
+    ),
+  ),
+
+  "border-radius": (
+    "prefix": "br",
+    "values": (
+      "default": $base-border-radius,
+      "none": 0,
+      "xs": math.div($base-border-radius, 4),
+      "sm": math.div($base-border-radius, 2),
+      "lg": $base-border-radius * 2,
+      "50": 50%,
+    ),
+  ),
+
+  "display": (
+    "prefix": "display",
+    "values": (
+      "n": none,
+      "b": block,
+      "f": flex,
+      "i": i,
+      "i-b": inline-block,
+      "r": relative,
+      "a": absolute,
+    ),
+  ),
+  "font-size": (
+    "prefix": "fz",
+    "values": (
+      "sm": $font-size-sm,
+      "md": $base-font-size,
+      "lg": $font-size-lg,
+      "xl": $font-size-xl,
+      "xxl": $font-size-xxl,
+      "xxxl": $font-size-xxxl
+    ),
+  ),
+
+  "font-weight": (
+    "prefix": "fw",
+    "values": (
+      "1": $base-font-weight * 0.6,
+      "2": $base-font-weight * 0.7,
+      "3": $base-font-weight * 0.8,
+      "4": $base-font-weight * 0.9,
+      "5": $base-font-weight * 1.3,
+      "6": $base-font-weight * 1.4,
+      "7": $base-font-weight * 1.5,
+      "8": $base-font-weight * 1.6,
+      "9": $base-font-weight * 1.7,
+    ),
+  ),
+
+  "border": (
+    "prefix": "border",
+    "values": (
+      "default": 2px solid black,
+      "blue": 2px solid blue,
+      "lime": 2px solid lime,
+      "pink": 2px solid pink,
+      "red": 2px solid red,
+      "purple": 2px solid purple,
+    ),
+  ),
+  "text-align": (
+    "prefix": "text",
+    "values": (
+      "left": left,
+      "right": right,
+      "center": center,
+      "justify": justify,
+    ),
+  ),
+  "flex-direction": (
+    "prefix": "flex-d",
+    "values": (
+      "col": column,
+      "row": row,
+    ),
+  ),
+
+  "width": (
+    "prefix": "w",
+    "values": (
+      "5": 5%,
+      "10": 10%,
+      "15": 15%,
+      "20": 20%,
+      "25": 25%,
+      "30": 30%,
+      "35": 35%,
+      "40": 40%,
+      "45": 45%,
+      "50": 50%,
+      "55": 55%,
+      "60": 60%,
+      "65": 65%,
+      "70": 70%,
+      "75": 75%,
+      "80": 80%,
+      "85": 85%,
+      "90": 90%,
+      "95": 95%,
+      "100": 100%,
+      "5vw": 5vw,
+      "10vw": 10vw,
+      "15vw": 15vw,
+      "20vw": 20vw,
+      "25vw": 25vw,
+      "30vw": 30vw,
+      "35vw": 35vw,
+      "40vw": 40vw,
+      "45vw": 45vw,
+      "50vw": 50vw,
+      "55vw": 55vw,
+      "60vw": 60vw,
+      "65vw": 65vw,
+      "70vw": 70vw,
+      "75vw": 75vw,
+      "80vw": 80vw,
+      "85vw": 85vw,
+      "90vw": 90vw,
+      "95vw": 95vw,
+      "100vw": 100vw,
+    ),
+  ),
+
+  "height": (
+    "prefix": "h",
+    "values": (
+      "5": 5%,
+      "10": 10%,
+      "15": 15%,
+      "20": 20%,
+      "25": 25%,
+      "30": 30%,
+      "35": 35%,
+      "40": 40%,
+      "45": 45%,
+      "50": 50%,
+      "55": 55%,
+      "60": 60%,
+      "65": 65%,
+      "70": 70%,
+      "75": 75%,
+      "80": 80%,
+      "85": 85%,
+      "90": 90%,
+      "95": 95%,
+      "100": 100%,
+      "5vh": 5vh,
+      "10vh": 10vh,
+      "15vh": 15vh,
+      "20vh": 20vh,
+      "25vh": 25vh,
+      "30vh": 30vh,
+      "35vh": 35vh,
+      "40vh": 40vh,
+      "45vh": 45vh,
+      "50vh": 50vh,
+      "55vh": 55vh,
+      "60vh": 60vh,
+      "65vh": 65vh,
+      "70vh": 70vh,
+      "75vh": 75vh,
+      "80vh": 80vh,
+      "85vh": 85vh,
+      "90vh": 90vh,
+      "95vh": 95vh,
+      "100vh": 100vh,
+    ),
+  ),
+);
+
+@each $property, $map in $utilities {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $key, $value in $values {
+    @if ($key == "default") {
+      .#{$prefix} {
+        #{$property}: $value;
+      }
+    } @else {
+      .#{$prefix}-#{$key} {
+        #{$property}: $value;
+      }
+    }
+  }
+}

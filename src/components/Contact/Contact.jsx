@@ -1,56 +1,44 @@
 import React, { useRef } from "react";
-import "./Contact.scss";
-import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 import emailjs from "@emailjs/browser";
+import ButtonRow from "../ButtonRow/ButtonRow";
+import { Fade } from "react-awesome-reveal";
 
-const Contact = React.forwardRef((props, ref) => {
+const Contact = ( ) => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_g0353ll",
-        "template_yiakx0v",
-        form.current,
-        "GEs7rv04u2jm4z0m8"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm("service_g0353ll", "template_yiakx0v", form.current, "GEs7rv04u2jm4z0m8").then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
 
     form.current.reset();
   };
   return (
-    <div className="contact" ref={ref}>
-      <div className="wrapper">
-        <KeyboardArrowUpOutlinedIcon
-          className="contact-arrow-up"
-          onClick={() => props.handler(props.targetUp)}
-        />
-        <div className="top"></div>
+    <div className="contact">
+      <div className="container-sm">
+        <Fade triggerOnce cascade>
+          <h1 className="text-center fz-xxl">CONTACT</h1>
+          <form className="display-f flex-d-col gap-4 pad-t4" ref={form} onSubmit={sendEmail}>
+            <input className="pad-1" type="text" placeholder="Name"  name="user_name" required={true} />
+            <input className="pad-1" type="email" placeholder="Email" name="user_email" required={true} />
+            <textarea name="message" className="pad-1" rows={7} placeholder="Message" required={true} />
+            <div className="display-f justify-center">
 
-        <div className="form">
-          <h1>Contact Me!</h1>
-          <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" required={true} />
-            <label>Email</label>
-            <input type="email" name="user_email" required={true} />
-            <label>Message</label>
-            <textarea name="message" required={true} />
-            <input type="submit" value="Send" className="button" />
+              <ButtonRow items={['Send']}/>
+            </div>
           </form>
-        </div>
+          </Fade>
+
       </div>
     </div>
   );
-});
+};
 
 export default Contact;

@@ -1,0 +1,11 @@
+.icons{
+  @include sm{
+    justify-content: center;
+  }
+  @include md{
+    justify-content: center;
+  }
+  @include lg{
+    justify-content: left;
+  }
+}

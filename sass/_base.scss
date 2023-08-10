@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  font-family: $font;
+}
+
+.tech{
+  flex: 1 0 21%;
+}
+
+.about{
+  margin-top: -18rm;
+}
+
+.skill{
+  margin: 30px 0 10px 0;
+  img{
+    height: 40px;
+  }
+}
+
+.skills{
+  padding-bottom: 8rem;
+}
+
+
+.projects{
+  margin-top: -18rem;
+}
+
+.image{
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.images{
+  @include sm{
+    padding-top: 20px;
+  }
+  @include md{
+    padding-top: 20px;
+
+  }
+  @include lg{
+    padding-top: 0;
+
+  }
+}
+.title{
+  @include sm{
+    text-align: center;
+  }
+  @include md{
+    text-align: center;
+  }
+  @include lg{
+    text-align: left;
+  }
+}
+
+.react-card-flip{
+  height: 100%;
+}
+
+.timeline-main-wrapper{
+  align-items: center;
+  justify-content: center;
+}
+.react-card-back{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 25%;
+}
+
+.uEQtg{
+  display: none !important;
+}
+.react-card-front{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.hero-img{
+  object-fit: cover;
+  border-radius: 10px;
+  @include sm{
+    display: none;
+  }
+  @include md{
+    display: none;
+  }
+  @include lg{
+    display: block;
+    height: 400px;
+    width: 400px;
+  }
+}
+
+.view {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @media (max-width:896px){
+    padding-right: .5px;
+  }
+
+ 
+
+  .title {
+    text-align: center;
+  }
+
+  .icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .icon {
+      height: 70px;
+      width: 70px;
+      object-fit: cover;
+    }
+  }
+}
+  .right {
+    display: flex;
+    flex-wrap: wrap;
+    h2 {
+      @media (max-width: 844px) {
+        font-size: 16px;
+      }
+    }
+
+    .image {
+      margin-top: 0px;
+
+      img {
+        object-fit: fill;
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+
+
+.img-holder{
+  @include sm{
+    display: none;
+    position: absolute;
+
+  }
+  @include md{
+    display: none;
+    position: absolute;
+  }
+  @include lg{
+    display: block;
+    position: relative;
+    
+  }
+}
+
+.iDjZjJ{
+  min-height: initial !important;
+}
+
+.App {
+  position: relative;
+}
+
+.about-desc{
+  line-height: 22px;
+}
+

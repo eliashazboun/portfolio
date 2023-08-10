@@ -1,0 +1,16 @@
+.card {
+  align-items: flex-start;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  display: flex;
+  width: 100%;
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px);
+  flex-direction: column;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  line-height: 1.5em;
+  height: fit-content;
+  position: relative;
+  text-align: left;
+  z-index: 0;
+}

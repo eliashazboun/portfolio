@@ -1,0 +1,25 @@
+.icon{
+  cursor: pointer;
+}
+
+.move{
+  &:hover{
+  animation: updown 2s ease-in-out infinite ;
+
+
+  }
+
+  @keyframes updown {
+    0% {
+      transform: translateY(-10%);
+    }
+  
+    50% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(-10%);
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.buttonrow {
+  display: flex;
+  gap: 2px;
+  @include sm{
+    justify-content: center;
+  }
+  @include md{
+    justify-content: center;
+
+  }
+  @include lg{
+    justify-content: left;
+
+  }
+  button {
+    border: none;
+  }
+
+  .btn-row-item {
+    padding: 11px 25px;
+    border: 2px solid $secondary;
+    @include sm{
+      width: auto;
+    }
+    @include md{
+      width: auto;
+  
+    }
+    @include lg{
+      width: fit-content;
+  
+    }
+
+    cursor: pointer;
+    background: $background;
+    background: linear-gradient(to left,$background 50%,#316cff 50%) right;
+    background-size: 200% 100%;
+    background-position:right bottom;
+    font-size: $font-size-lg;
+    font-weight: 800;
+    color: $secondary;
+    transition:.3s ease-in-out;
+   
+
+   
+    &:hover{
+      color: $background;
+      background-position: left;
+    }
+  }
+}
+
+.buttonrow-i {
+  display: flex;
+  gap: 2px;
+  @include sm{
+    justify-content: center;
+  }
+  @include md{
+    justify-content: center;
+
+  }
+  @include lg{
+    justify-content: left;
+
+  }
+  button {
+    border: none;
+  }
+
+  .btn-row-item {
+    padding: 11px 25px;
+    border: 2px solid $background;
+    @include sm{
+      width: auto;
+    }
+    @include md{
+      width: auto;
+  
+    }
+    @include lg{
+      width: fit-content;
+  
+    }
+
+    cursor: pointer;
+    background: transparent;
+    background: linear-gradient(to left,transparent 50%,$background 50%) right;
+    background-size: 200% 100%;
+    background-position:right bottom;
+    font-size: $font-size-lg;
+    font-weight: 800;
+    color: $background;
+    transition:.2s ease-in-out;
+   
+
+   
+    &:hover{
+      color: $secondary;
+      background-position: left;
+    }
+  }
+}
+
