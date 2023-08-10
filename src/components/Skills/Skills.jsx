@@ -37,7 +37,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="skill row ">
+          <div className="skill row pad-b2 ">
             <h1 className="col-12-sm col-12-md col-6-lg text-center">Back End</h1>
             <div className="images display-f justify-center col-12-sm col-12-md col-6-lg">
               <div className="image">
@@ -68,7 +68,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="skill row">
+          <div className="skill row pad-b4">
             <h1 className="col-12-sm col-12-md col-6-lg text-center">Tools</h1>
             <div className="images col-12-sm col-12-md col-6-lg display-f justify-center">
               <div className="image">

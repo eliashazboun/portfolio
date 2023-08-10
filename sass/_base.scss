@@ -64,6 +64,24 @@
   height: 100%;
 }
 
+.project-img{
+  @include sm{
+    height: 50%;
+    width: 100%;
+    
+  }
+  @include md{
+    height: 50%;
+    width: 100%;
+    
+  }
+  @include lg{
+    height: 50%;
+    width: 100%;
+    
+  }
+}
+
 .timeline-main-wrapper{
   align-items: center;
   justify-content: center;

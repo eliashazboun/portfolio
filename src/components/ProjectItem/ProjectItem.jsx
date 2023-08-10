@@ -26,7 +26,7 @@ const ProjectItem = ({ title, tech, img, buttonLabels, children }) => {
       <div className="project-image col-12-sm col-12-md col-6-lg">
         <Slide triggerOnce direction="right">
 
-        <img src={require(`../../images/${img}`)} alt="" height={300} width={500} />
+        <img src={require(`../../images/${img}`)} alt="" className="project-img" height={300} width={500} />
         </Slide>
       </div>
     </div>
