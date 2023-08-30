@@ -1,41 +1,29 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import ButtonRow from "../ButtonRow/ButtonRow";
-import { Fade } from "react-awesome-reveal";
+import React from "react";
 
-const Contact = ( ) => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm("service_g0353ll", "template_yiakx0v", form.current, "GEs7rv04u2jm4z0m8").then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-
-    form.current.reset();
-  };
+const Contact = () => {
   return (
-    <div className="contact">
-      <div className="container-sm">
-        <Fade triggerOnce cascade>
-          <h1 className="text-center fz-xxl">CONTACT</h1>
-          <form className="display-f flex-d-col gap-4 pad-t4" ref={form} onSubmit={sendEmail}>
-            <input className="pad-1" type="text" placeholder="Name"  name="user_name" required={true} />
-            <input className="pad-1" type="email" placeholder="Email" name="user_email" required={true} />
-            <textarea name="message" className="pad-1" rows={7} placeholder="Message" required={true} />
-            <div className="display-f justify-center">
+    <div className="contact m-b4">
+      <div className="section">
+        <div className="container">
+        <h1 className="text-center fz-xxl pad-b4">CONTACT</h1>
 
-              <ButtonRow items={['Send']}/>
+          <div className="row justify-space-around">
+            <div className="contactitem text-center pad-1 col-12-sm col-12-md col-4-lg">
+            <img width="64" height="64" src="https://img.icons8.com/3d-fluency/64/phone.png" alt="phone"/>
+              <p className=" fz-xl text-center ">Phone</p>
+              <p className=" fz-lg text-center ">(252)-469-8517</p>
+
             </div>
-          </form>
-          </Fade>
+            <div className="contactitem text-center pad-1 col-12-sm col-12-md col-4-lg">
+            <img width="60" height="60" src="https://img.icons8.com/papercut/60/000000/new-post.png" alt="new-post"/>
 
+              <p className=" fz-xl text-center ">Email</p>
+              <p className=" fz-lg text-center ">hazbounelias96@gmail.com</p>
+
+            </div>
+          
+          </div>
+        </div>
       </div>
     </div>
   );

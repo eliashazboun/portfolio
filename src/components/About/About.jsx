@@ -19,7 +19,7 @@ const About = () => {
 
             </div>
             <div className="right col-12-sm col-12-md col-6-lg">
-              <p className="about-desc pad-b4 pad-t4">As a recent Computer Science graduate, I have a solid foundation in Software Development Lifecycle, Cloud Technologies, 
+              <p className="about-desc pad-b4 pad-t4">As a recent Computer Science graduate, I have a solid foundation in the Software Development Lifecycle, Cloud Technologies, 
                 and leveraging CI / CD Tools. I am also well versed in Agile Practices as my education revolved heavily around Agile teams. 
                  <br/><br/> 
                  Aside from my technical skills, I also thrive in fast-paced environments and am detail-oriented. This is due to my nature, and my previous role as a line cook. Working in a kitchen environment taught me how to prioritize tasks effectively, 

@@ -7,9 +7,9 @@ const ProjectItem = ({ title, tech, img, buttonLabels, children }) => {
     <div className="project-item pad-b5 row">
       <div className="info col-12-sm col-12-md col-6-lg">
         <Reveal triggerOnce>
-          <div>
-            <h1 className="title pad-b1">{title}</h1>
-            <div className="row  gap-2 pad-b2 m-r5">
+          <div className="project-left">
+            <h1 className="titlep pad-b1">{title}</h1>
+            <div className="row  gap-2 pad-b2">
               {tech.map((item, index) => {
                 return (
                   <p className="tech text-center bg-secondary text-white br-sm pad-1 fw-9 " key={index}>
@@ -18,7 +18,7 @@ const ProjectItem = ({ title, tech, img, buttonLabels, children }) => {
                 );
               })}
             </div>
-            <p className="description m-r5 pad-b3">{children}</p>
+            <p className="description pad-b3">{children}</p>
             <ButtonRow items={buttonLabels} />
           </div>
         </Reveal>

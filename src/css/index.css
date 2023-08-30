@@ -3316,6 +3316,22 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@media (min-width: 0px) {
+  .project-left {
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .project-left {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .project-left {
+    margin-right: 6rem;
+  }
+}
+
 .tech {
   flex: 1 0 21%;
 }
