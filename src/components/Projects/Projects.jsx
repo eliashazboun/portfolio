@@ -11,20 +11,99 @@ const Projects = () => {
         </Fade>
         <div className="container-md row">
           <ProjectItem
-            title="E-Commerce Website"
-            tech={["React", "Redux", "Stripe", "Strapi"]}
-            img="eliscornershop.png"
+            title="E-Commerce Store Front"
+            tech={[
+              "Next.js",
+              "Tailwind",
+              "MySQL",
+              "Prisma ORM",
+              "Typescript",
+              "Stripe",
+            ]}
+            img="molecular-decor.png"
             buttonLabels={[
-              { "Source Code": "https://github.com/eliashazboun/ecommerce" },
-              { "Check it Out": "https://elisscorner.shop/" },
+              { "Source Code": "https://github.com/eliashazboun/molecular-decor-front" },
+              { "Check it Out": "https://molecular-decor-front.vercel.app" },
             ]}
           >
-            An E-Commerce Platform that uses Strapi, a headless CMS, to handle
-            products and categories. Stripe API was also implemented to provide
-            secure and hassle free payment.
+            This E-Commerce platform is dedicated to providing individual molecular models
+            to people that want them. It is fully mobile responsive, has individual product pages,
+            and secure payment with Stripe. 
+            <br /> <br />
+            All of the content on the site is controlled through the Content Management System that I built
+            for it. 
           </ProjectItem>
           <ProjectItem
-            title="Car Booking"
+            title="E-Commerce CMS"
+            tech={["Next.js", "Tailwind", "MySQL", "Prisma ORM", "Typescript", "Stripe"]}
+            img="molecular-decor-admin.png"
+            buttonLabels={[
+              {
+                "Source Code":
+                  "https://github.com/eliashazboun/molecular-decor-admin",
+              },
+              { "Check it Out": "https://molecular-decor-admin.vercel.app/" },
+            ]}
+          >
+           This powerful CMS controls the content on the store front. You can manage your products,
+            categories, billboards for each product page, setting products to featured or archived,
+            and all the API routes to aide in developer experience.
+          </ProjectItem>
+          <ProjectItem
+            title="Therapy Private Practice"
+            tech={[
+              "Next.js",
+              "Tailwind",
+              "MySQL",
+              "Prisma ORM",
+              "Typescript",
+              "Stripe",
+            ]}
+            img="therapy-admin.png"
+            buttonLabels={[
+              {
+                "Source Code":
+                  "https://github.com/eliashazboun/therapy-admin",
+              },
+              { "Check it Out": "https://therapy-admin.vercel.app/" },
+            ]}
+          >
+            <b>UNDER DEVELOPMENT</b>
+            <br /> <br />
+            All in one solution for private practice owners, designed to
+            streamline the intricacies of managing a private practice. Inlcudes
+            login/signup, client lookup, calendar for appointments, and full CRUD
+            operations on clients and appointments.
+            <br /><br />
+            Currently working on the individual client pages,booking, stripe integration,
+            and zoom integration.
+          </ProjectItem>
+          <ProjectItem
+            title="Chatboard Application"
+            tech={[
+              "Vite",
+              "Tailwind",
+              "Firebase",
+              "Javascript",
+              "Redux",
+            ]}
+            img="chat-app.png"
+            buttonLabels={[
+              {
+                "Source Code":
+                  "https://github.com/eliashazboun/chat-prod",
+              },
+              { "Check it Out": "https://chat-prod-eliashazboun.vercel.app/" },
+            ]}
+          >
+            Created a chatboard application for my friends and I to use. It is fully mobile responsive,
+            has two individual chat rooms, user creation, profile pictures, mentioning other users,
+            notifications, and a commenting and liking system.
+            <br /><br />
+            Check it out and create your own user!
+          </ProjectItem>
+          <ProjectItem
+            title="Car Showcase"
             tech={[
               "Next.js",
               "React",
@@ -39,49 +118,18 @@ const Projects = () => {
               { "Check it Out": "https://cars-chi-amber.vercel.app/" },
             ]}
           >
-            Car booking application which is fully responsive on mobile devices.
-            Utilized Cars API by Ninjas for car information. Car pictures were
-            gathered by webscraping with Selenium and Pillow to remove the
-            backgrounds.
-            <br /> <br /> 
-            Features full search functionality by make, model and
-            fuel type. Pagination for the list of cars,and server side rendering
-            to imporove SEO and load speeds.
+            Car showcase application which is fully responsive on mobile
+            devices. Utilized Cars API by Ninjas for car information. Car
+            pictures were gathered by webscraping with Selenium and Pillow to
+            remove the backgrounds.
+            <br /> <br />
+            Features full search functionality by make, model and fuel type.
+            Pagination for the list of cars,and server side rendering to
+            imporove SEO and load speeds.
           </ProjectItem>
-          <ProjectItem
-            title="Car Detailing Website"
-            tech={["React", "Sass", "Gulp"]}
-            img="detailing.png"
-            buttonLabels={[
-              {
-                "Source Code":"https://github.com/eliashazboun/car-detailing/tree/main",
-              },
-              { "Check it Out": "https://detailing.eliscorner.net/" },
-            ]}
-          >
-            A company page for a car detailing business. Showcases the services
-            and what they include, a gallery to show images of work done, a
-            testimonials page for social proof, and finally a contact
-            information section.
-          </ProjectItem>
+          
 
-          <ProjectItem
-            title="Therapy Private Practice"
-            tech={["Mongo", "Express", "React", "Node"]}
-            img="website.png"
-            buttonLabels={[
-              {
-                "Source Code":"https://github.com/eliashazboun/private-practice",
-              },
-            ]}
-          >
-            This is a MERN stack application I am in the process of building.
-            <br /> <br /> 
-            All in one solution for private practice owners, designed to streamline
-            the intricacies of managing a practice. Inlcudes login/signup, client lookup,
-            calendar to show appointments, admin dashboard, and full CRUD operations for
-            clients and appointments.
-          </ProjectItem>
+          
         </div>
       </div>
     </div>

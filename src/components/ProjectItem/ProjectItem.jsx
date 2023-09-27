@@ -18,7 +18,9 @@ const ProjectItem = ({ title, tech, img, buttonLabels, children }) => {
                 );
               })}
             </div>
-            <p className="description pad-b3">{children}</p>
+            <p className="description pad-b3">
+              {children}
+            </p>
             <ButtonRow items={buttonLabels} />
           </div>
         </Reveal>

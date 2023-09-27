@@ -18,7 +18,7 @@ const Contact = () => {
             <img width="60" height="60" src="https://img.icons8.com/papercut/60/000000/new-post.png" alt="new-post"/>
 
               <p className=" fz-xl text-center ">Email</p>
-              <p className=" fz-lg text-center ">hazbounelias96@gmail.com</p>
+              <p className="email fz-lg text-center" onClick={(e) => {window.location.href='mailto:hazbounelias96@gmail.com'}}>hazbounelias96@gmail.com</p>
 
             </div>
           

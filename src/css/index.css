@@ -3336,6 +3336,14 @@
   flex: 1 0 21%;
 }
 
+.email {
+  cursor: pointer;
+}
+
+.email:hover {
+  color: blue;
+}
+
 .about {
   margin-top: -18rm;
 }

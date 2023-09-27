@@ -24,6 +24,13 @@ const Skills = () => {
                 <p className="text-center fz-md">Javascript</p>
               </div>
               <div className="image">
+                
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="" />
+          
+                <p className="text-center fz-md">Typescript</p>
+              </div>
+              
+              <div className="image">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" />
                 <p className="text-center fz-md">HTML5</p>
               </div>
